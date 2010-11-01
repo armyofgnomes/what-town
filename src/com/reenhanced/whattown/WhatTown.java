@@ -66,7 +66,9 @@ public class WhatTown extends Activity implements LocationListener {
     protected void onResume() {
     	super.onResume();
     	// Start updates (doc recommends delay >= 60000 ms)
-    	mgr.requestLocationUpdates(best, 15000, 1, this);
+    	// Delayed by 5 minutes and within 5km
+    	// We only want to update when the user enters a new city
+    	mgr.requestLocationUpdates(best, 300000, 5000, this);
     }
     
     @Override
