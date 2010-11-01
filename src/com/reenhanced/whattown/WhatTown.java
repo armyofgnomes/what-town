@@ -2,11 +2,6 @@ package com.reenhanced.whattown;
 
 import java.io.IOException;
 import java.util.List;
-<<<<<<< HEAD
-=======
-import java.util.Locale;
-
->>>>>>> cb06251cf45c389802abbca2cb032ad9acb50245
 import android.app.Activity;
 import android.location.Address;
 import android.location.Criteria;
